@@ -1,0 +1,327 @@
+@media(max-width:1024px){
+
+    .container{
+        max-width: 992px;
+    }
+
+    .header{
+
+        .flex{
+
+            .logo {
+                flex: 1 1 17%;
+                margin-bottom: 21px;
+            }
+
+            .logo svg {
+                width: 166px;
+            }
+
+            .nav {
+                flex: 1 1 81%;
+
+                .nav-list{
+                    padding-right: 16px;
+
+                    &_item {
+                        margin-right: 33px;
+                    }
+                }
+                
+            }
+        
+            .search {
+                flex: 1 1 2%;
+                margin-top: 4px;
+        
+                
+            }
+        
+
+        }
+    }  
+    
+    .main{
+        .hero {
+            margin-top: 35px;
+            grid-template-rows: repeat(15, 14.5px);
+            gap: 29px 30px;
+
+            .hero-item_mine{
+                background-image: url('../images/hero-main-1024.webp');
+
+                .tag_description {
+                    right: 15px;
+                }
+
+                .hero-description{
+                    left: 30px;
+                    bottom: 47px;
+
+                    .hero-masterclass{
+                        margin-bottom: 8px;
+                    }
+
+                    .hero-title{
+                        margin-bottom: 36.5px;
+                        font-size: 34px;
+                        line-height: 100%;
+                    }
+                }
+
+            }
+
+            .hero-item_title{
+                .hero-title_description{
+                    margin-top: 1px;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .hero-item_big {
+                margin-top: 31px;
+                background-image: url('../images/hero-big-1024.webp');
+                grid-row: 2/11;
+            }
+
+            .hero-item_left{
+                margin-top: 2px;
+                background-image: url('../images/hero-left-1024.webp');
+                grid-row: 11/16;
+            }
+
+            .hero-item_right {
+                margin-top: 2px;
+                background-image: url('../images/hero-right-1024.webp');
+                grid-row: 11/16;
+            }
+        
+        }
+
+        .about {
+            &-content{
+    
+                .about-description {
+                   
+    
+                    &_left{
+                        max-width: 466px;
+                        margin-bottom: 68px;
+                        max-height: 524px;
+
+                        .span2-1024{
+                            margin-right: 13px;
+                        }
+                    }
+    
+                    &_right{
+                        max-width: 466px;
+
+                        .description_right-img{
+                            min-height: 330px;
+                            background-image: url('../images/about-img-1024.webp');
+                            background-repeat: no-repeat;
+                        }
+    
+                        .description_right-title{
+                            margin-left: -1px;
+                        }
+    
+                        .about-form{
+                            margin-bottom: 0;
+    
+                            .about-form_input{
+                               margin-right: 0px;
+                               width: 342px;
+                            }
+    
+                            .about-form_btn{
+                                padding: 15px 23px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        .projects{
+            &-content{
+                &_list{
+                    grid-template-columns: repeat(4,1fr);
+                    gap: 10px 30px;
+                    
+                    .content_list-item {
+                        .tag{
+                            .projects-tag{
+                                padding: 6px 15px;
+                            }
+                        }
+
+                        .list-item_description{
+                            margin-bottom: 7px;
+
+                            .project-span1{
+                                margin-left: 22px;
+                            }
+                        }
+
+                        .date-white {
+                            margin-top: 29px;
+                        }
+
+                        .fuji-btn {
+                            bottom: 38px;
+                        }
+                    }
+
+                    .landscape{
+                        
+                        .landscape-img{
+                            background-image: url('../images/landscape-1024.webp');
+                        }
+                    }
+                    .item{
+                        grid-column: 3/5;
+                    }
+                    .fuji{
+                       max-width: 82.5%;
+                       min-height: 307px;
+                       background-image: url('../images/projects-fuji-1024.webp');
+
+                    }
+                    .oblivion{
+                         margin-top: 20px;
+                         grid-column: 2/5;
+                         min-width: 82.5%;
+                         min-height: 307px;
+                         justify-self: end;
+                         background-image: url('../images/oblivion-1024.webp');
+                    }
+                    .retouch{
+                        max-width: 73.1%;
+                        justify-self: end;
+                        grid-column: 3/5;
+                        .retouch-img{
+                           background-image: url('../images/retouch-1024.webp');
+                        }
+                    }
+                    .portrait_big{
+                       margin-top: 20px;
+                       grid-column: 1/3;
+                       max-width: 73.1%;
+                       justify-self: flex-start;
+                
+                    }
+                }
+            }
+        }
+
+        .contacts{
+            margin-top: 95px;
+            margin-bottom: 68px;
+            .contacts-content{
+              grid-template-rows: repeat(1,467px);
+
+                &_adress{
+                    margin-top: 0;
+                    align-self: end;
+                    grid-column:1/3;
+                    height: 157px;
+                    max-width: 590px;
+
+                  
+
+                    .content-adress_title{
+                        margin-top: 25px;
+                    }
+
+                    .content-adress_description{
+                        
+                        .content-adress_tel{
+                           margin-top: -25px;
+                           justify-content: center;
+                           margin-right: -30px;
+
+                            .tel-icon{
+                                margin-left: 3px;
+                            }
+                            .tel-icon > path {
+                                fill: $hoverColor;
+                            }
+
+                            .tel-number{
+                                margin-top: 0;
+                                color: $hoverColor;
+                            }
+                        
+                        }
+                    }
+
+                    
+
+                    
+                    
+                }
+
+                &_map{
+                    max-width: 590px;
+                    
+                }
+
+                &_form{
+                    min-width: 342px;
+                    
+
+                    .contacts-form_input{
+                        padding-top: 0;
+                    }
+                    .contacts-form_textarea{
+                        margin-bottom: 14px;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+
+    .footer{
+        .container{
+            .footer-content{
+                grid-template-columns: repeat(8, 1fr);
+                .footer-logo{
+                    margin-top: 27px;
+                    grid-column: 1/4;
+                    grid-row: 1/1;
+
+                    &_img{
+                        svg {
+                            width: 166px;
+                        }
+                    }
+
+                    &_description{
+                        margin-top: 0;
+                    }
+                }
+
+                .footer-text{
+                    grid-column: 4/9;
+                    grid-row: 1/1;
+                    justify-self: center;
+                    align-self: center;
+                    margin-left: 3px;
+                    margin-top: 5px;
+                    
+                }
+
+                .footer-social{
+                    grid-column: 9/10;
+                    grid-row: 1/1;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,272 @@
+@import 'var.scss';
+@media(max-width:768px){
+  
+    .container{
+        max-width: 743px;
+    }
+
+    .header {
+        .flex {
+            max-width: 743px;
+            padding-right: 15px;
+            padding-left: 15px;
+            display: grid;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: repeat(12,1fr);
+
+            .logo{
+               margin-bottom: 21px;
+            }
+            .nav {
+                display:grid;
+                grid-template-rows: repeat(1, 1fr);
+                grid-template-columns:repeat(12,1fr);
+                justify-content: center;
+                position: absolute;
+                top: 80px;
+                left: 27px;
+                right: 27px;
+
+                .nav-list{
+                    grid-row: 1/1;
+                    grid-column: 1/13;
+                    justify-content: space-between;
+                    max-width: 713px;
+                    margin-top: 11px;
+                    margin-bottom: 13px;
+
+                    .nav-list_item{
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .search {
+               display: flex;
+               grid-column: 12/12;
+               justify-self: end;
+               margin-top: 0;
+               position: relative;
+
+               &-float{
+                   position: absolute;
+                   display: flex;
+                   top: 42px;
+                   right: 0px;
+                   background-color: #202020;
+                   width: 343px;
+
+
+                   .search_input{
+                        margin-left: 0;
+                        margin-bottom: 5px;
+                        margin-top: 7px;
+                        padding-right: 140px;
+                    }
+
+                    .search-close{
+                        margin-left: 5px;
+                    }
+               }
+               
+            }
+        }
+
+        .undernav {
+            display: flex;
+            background-color: #4A4A4A;
+            justify-content: center;
+            height: 45px;
+            
+            
+        }
+    }
+
+    .main {
+        .hero {
+            grid-template-rows: repeat(3,15.5px);
+
+            .hero-item_mine{
+                background-image: url('../images/hero-main-768.webp');
+
+                .tag{
+                    .tag_description{
+                        top: 2px;
+                    }
+                }
+
+                .hero-description {
+                    left: 28px;
+                    bottom: 45px;
+
+                    .hero-masterclass{
+                        margin-bottom: 11px;
+                    }
+
+                    .hero-title{
+                        margin-bottom: 37.5px;
+                        line-height: 94%;
+                        max-width: 239px;
+                    }
+                }
+            }
+
+            .hero-item_title{
+                .hero-title_description{
+                    margin-top: 0px;
+                    font-size: 22px;
+                }
+            }
+
+            .hero-item_big{
+                background-image: url('../images/hero-big-768.webp');
+                margin-top: 0px;
+            }
+
+            .hero-item_left{
+                background-image: url('../images/hero-left-768.webp');
+                margin-top: 12px;
+                grid-row: 10/16;
+            }
+
+            .hero-item_right{
+                background-image: url('../images/hero-right-768.webp');
+                margin-top: 12px;
+                grid-row: 10/16;
+            }
+        }
+
+        .about{
+            padding-top: 11px;
+            &-content{
+
+                .about-description{
+
+                    &_left{
+                        margin-bottom: 63px;
+                        
+                        .span2-1024{
+                            margin-right: 0;
+                        }
+                    }
+
+                    &_right{
+                        
+                        
+
+                        .description_right-img{
+                           
+                        }
+                    }
+                }
+            }
+        }
+
+        .projects{
+            &-title{
+                margin-left: -1px;
+            }
+            &-content{
+                &_list{
+                    grid-template-rows: repeat(4,299px);
+                    gap: 27px 29px;
+                    .content_list-item {
+                        position: relative;
+    
+                        .tag{
+                            .projects-tag{
+                                padding: 6px 14px;
+                            }
+                        }
+
+                        .fuji-btn {
+                            bottom: 31px;
+                        }
+
+                        .date{
+                            
+                            &-icon{
+                                min-width: 13.67px;
+                            }
+
+                            &-description{
+                                margin-left: 4px;
+                            }
+                        }
+
+                        .first-row_date{
+                            position: absolute;
+                            bottom: -13px;            
+                        }
+
+                        .date-white{
+                            margin-left: 29px;
+                        }
+
+                    }
+                    
+                    .item{
+                        .item-img{
+                           background-image: url('../images/projects-item-768.webp');
+                        }
+                    }
+                    .fuji{
+                       margin-left: -1px;
+                       max-width: 101%;
+                       min-height: 300px;
+                    }
+                    .oblivion{
+                         margin-top: 9px;
+                         min-height: 300px;
+                         min-width: 100.1%;
+                    }
+                    .retouch{
+                        margin-top: 3px;
+                        margin-left: -1px; 
+                    }
+                    .portrait_big{
+                       margin-top: 3px;
+                    }
+                }
+            }
+        }
+
+        .contacts{
+            margin-top: 77px;
+            margin-bottom: 46px;
+            
+            .contacts-content{
+                gap: 24px 30px;
+
+                &_adress{
+                    .content-adress_description{
+                        max-width: 436px;
+                        
+                        .content-adress_tel{
+                            margin-top: 4px;
+                            margin-left: -4px;
+                            justify-content: start;
+                        }
+                    }
+
+                    
+                }
+
+                &_form{
+                    .contacts-form_title{
+
+                    }
+                    .contacts-form_description{
+                        margin-bottom: 15px;
+                    }
+
+                    
+                    .contacts-form_textarea{
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}

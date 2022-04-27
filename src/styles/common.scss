@@ -1,0 +1,133 @@
+@import 'var.scss';
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('../fonts/ttfirsneue-bold-webfont.woff') format('woff'),
+         url('../fonts/ttfirsneue-bold-webfont.woff2') format('woff2');
+    font-display: swap;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('../fonts/ttfirsneue-regular-webfont.woff') format('woff'),
+         url('../fonts/ttfirsneue-regular-webfont.woff2') format('woff2');
+    font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2');
+    font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1319px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.tag_description {
+    display: inline;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    background: #333333;
+}
+
+.btn {
+    padding: 14px 23px;
+    background-color: $hoverColor;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.btn:hover {
+    transition: background-color .3s ease-in;
+    background-color:$focusColor;
+}
+
+.btn:active {
+    background-color: $hoverColor;
+    padding: 11px 20px;
+    border: 3px solid $activeColor;
+}
+
+.btn:focus {
+    background-color: $activeColor;
+    outline: inherit;
+}
+
+.search-icon:hover path {
+    transition: fill .2s ease-in;
+    fill: $hoverColor;
+}
+
+.search-icon:active path {
+    fill: $activeColor;
+}
+
+.search:focus,
+.search:focus path{
+    outline: none;
+    fill: $focusColor;
+}
+
+.opacity{
+    opacity: 0 !important;
+    transition: opacity .2s ease;
+}
+
+.close{
+    display: none !important;
+    
+}
+
+.open {
+    display: block !important;
+    
+}
+

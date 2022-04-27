@@ -1,0 +1,268 @@
+@import 'var.scss';
+
+@media(max-width:320px){
+    .container{
+        max-width: 320px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .header{
+        .flex{
+            max-width: 278px;
+            padding-left: 0;
+            padding-right: 0;
+
+            .logo{
+                margin-top: 20px;
+                margin-bottom: 15px;
+            }
+            .logo svg{
+                width: 111.55px;
+            }
+
+            .nav{
+                left: 21px;
+            }
+            .search{
+                margin-top: 3px;
+
+                &-icon{
+                    width: 20px;
+                }
+            }
+        }
+
+    }
+
+    .main {
+        
+        .hero {
+           
+            .hero-item_mine{
+    
+                background-image: url('../images/hero-main-mobile.webp');
+            }
+        }
+
+        .about {
+           
+            &-content {
+
+                .about-description{
+                
+                    &_right{
+                        
+                        .description_right-img{
+                            background-image: url('../images/about-img-320.webp');
+                           
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .projects{
+            margin-top: 50px;
+
+            &-title{
+                margin-left: 0;
+                margin-top: 0;
+                margin-bottom: 16px;
+                font-size: 18px;
+                line-height: 23px;
+            }
+            &-content{
+                &_list{
+                    grid-template-rows: repeat(8,275px);
+
+                    .content_list-item {
+
+                        .tag{
+                            .projects-tag{
+                                padding: 4px 14px;
+                                font-size: 12px;
+                                line-height: 14px;
+                                right: 5px;
+                                top: 5px;
+
+                            }
+                        }
+
+                        .list-item_description{
+                            margin-top: 18px;
+                            margin-bottom: 0;
+                        }
+
+                        .date{
+                            &-description{
+                                &_first {
+                                    display: none;
+                                }
+
+                                &_second{
+                                    display: inline;
+                                }
+                            }
+                        }
+                        .first-row_date{
+                            bottom: -14px;
+
+
+                        }.date-white {
+                            margin-top: 196px;
+                        }
+
+                        .project-title_second{
+                            margin-top: 5px;
+                            margin-bottom: 10px;
+                        }
+
+                        .project-second_description {
+                            font-size: 14px;
+                            line-height: 18px;
+                            max-width: 218px;
+                            margin-bottom: 100px;
+                        }
+
+                        .projects-btn{
+                            padding: 9px 18px;
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+
+
+                    .fuji{
+                       max-height: 422px;
+                    }
+                    .oblivion{
+                         grid-row: 7/10;
+                         margin-top: 197px;
+                         max-height: 422px;
+                    }
+                    .retouch{
+                        grid-row: 5/6;
+                        margin-top: 150px;
+                        margin-left: 1px;
+                       
+                    }
+                    .portrait_big{
+                        grid-row: 6/7;
+                        margin-top: 173px;
+                    }
+                }
+            }
+        }
+
+        .contacts{
+            margin-top: 50px;
+            margin-bottom: 9px;
+            .contacts-content{
+                grid-template-rows: repeat(2,470px);
+                gap: 23px 30px;
+
+                &_adress{
+                    margin-left: -21px;
+                    min-width:320px;
+                    
+                    .content-adress_title{
+                        margin-bottom: 11px;
+                    }
+
+                    .content-adress_description{
+
+                        .content-adress_tel{
+                            margin-top: 11px;
+                        
+                            .tel-number{
+                                font-size: 14px;
+                                line-height: 18px;
+                                margin-left: 2px;
+                            }
+                        }
+                    }
+
+                    
+                }
+
+                &_map{
+                   margin-top: 0;
+                   margin-left: -21px;
+                   min-width: 320px;
+                   height: 472px;
+                }
+
+                &_form{
+                    
+                    .contacts-form_description{
+                        margin-top: 7px;
+                    }
+
+                    .contacts-form_input{
+                       height: 40px;
+                       width: 93%;
+                    }
+                    .contacts-form_textarea{
+                        width: 93%;
+                    }
+
+                    .contacts-form_input::placeholder,
+                    .contacts-form_textarea::placeholder{
+                        
+                        font-size: 14px;
+                        line-height: 16px;
+                        
+                    }
+                    .contacts-form_btn{
+                        padding: 13px 23px;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        
+        .container{
+            .footer-content{
+                grid-template-rows: repeat(1,123px);
+
+
+                .footer-social{
+                    margin-top: 14px;
+
+                    &_links{
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+        .footerGray{
+            
+            .container{
+                .footerGray_logo{
+                    margin-top: 7px;
+                    
+                    .footerGray-logo_img{
+                        margin-left: 30px;
+                        svg{
+                            width: 111.55px;
+                        }
+                    }
+                    
+
+                    .footerGray-logo_description{
+                       margin-top: -6px;
+                       margin-bottom: 13px;
+                    }
+                }
+            }
+        }
+    }
+   
+}

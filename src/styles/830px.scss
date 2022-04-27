@@ -1,0 +1,153 @@
+@media(max-width:830px){
+    .header {
+        .flex {
+            .nav {
+                .nav-list{
+                    justify-content: center;
+                    padding-right: 0px;
+
+                    &_item {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main{
+        .about {
+
+            &-content{
+
+                .about-description{
+
+                    &_left{
+                        max-width: 400px;
+                        max-height: 769px;
+                    }
+
+                    &_right{
+                        max-width: 400px;
+                        
+
+                        .description_right-img{
+                            background-image: url('../images/about-img-768.webp');
+                            background-position: 0;
+                            min-height: 569px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .projects{
+            &-content{
+                &_list{
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(4,300px);
+                    gap: 30px 30px;
+
+                    .content_list-item {
+
+                        .list-item_description{
+
+                            .item_description-less{
+                                display: inline;
+                            }
+
+                            .item_description-more{
+                                display: none;
+                            }
+                            
+                            .project-span1{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+
+                    .item{
+                        grid-column: 3/4;
+                        
+                    }
+                    .fuji{
+                       grid-column: 1/4;
+                       max-width: 100%;
+                       background-size: cover;
+                       background-position: center;
+                    }
+                    .oblivion{
+                        margin-top: 0;
+                         grid-column: 1/4;
+                         grid-row: 4/4;
+                         min-width: 100%;
+                         background-size: cover;
+                         background-position: center;
+                    }
+                    .retouch{
+                        grid-column: 1/3;
+                        grid-row: 3/3;
+                        justify-self: start;
+                        
+                    }
+                    .portrait_big{
+                        margin-top: 0;
+                        grid-column: 2/4;
+                        grid-row: 3/3;
+                        justify-self: end;
+                    }
+                }
+            }
+        }
+
+        .contacts{
+            .contacts-content{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2,467px);
+                gap: 30px 30px;
+
+                &_adress{
+                    grid-column: 1/1;
+                    grid-row: 1/1;
+                    max-width: 100%;
+                    
+                }
+
+                &_map{
+                    grid-column: 1/1;
+                    grid-row: 1/1;
+                    max-width: 100%;
+                }
+
+                &_form{
+                    grid-column: 1/1;
+                    grid-row: 2/2;
+                    max-width: 466px;
+                }
+            }
+        }
+    }
+
+    .footer{
+        .container{
+            .footer-content{
+                grid-template-columns: repeat(2, 1fr);
+
+                .footer-logo{
+                    grid-column: 1/2;
+                   
+                }
+
+                .footer-text{
+                    display: none;
+                   
+                }
+
+                .footer-social{
+                    grid-column: 2/3;
+                   
+                }
+            }
+        }
+    }
+
+}

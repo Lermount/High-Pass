@@ -1,0 +1,153 @@
+@media(max-width:1275px){
+    .header{
+        .flex{
+            .nav{
+                .nav-list{
+                    justify-content: center;
+
+                    &_item {
+                        margin-right: 40px;
+                    }
+                }
+            }
+
+            .social{
+                display: none;
+            }
+
+            .search {
+                display: flex;
+                &-float{
+                    display: flex;
+                    .search_input{
+
+                        margin-left: 5.5px;
+                        display: none;
+                        background:none;
+                        border: none;
+                        color: #E9E9E9;
+                        border-bottom: 1px solid #E9E9E9;
+                    }
+
+                    .search_input::placeholder{
+                        font-family: 'TT Firs Neue';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #E9E9E9;
+                    }
+
+                    .search_input:focus{
+                        outline: none;
+                        border-bottom-color:$activeColor;
+                    }
+
+                    .search_input:hover{
+                        border-bottom-color:$hoverColor;
+                    }
+
+                    .search-close{
+                        display: none;
+                    }
+                    .search-close_mobile{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }  
+
+    .main {
+        .hero {
+            
+            .hero-item_big{
+                background-position: center;
+            }
+        }
+
+        .about{
+            .description_right-img {
+                background-position: center;
+            }
+        }
+
+        .projects{
+            &-content{
+
+                &_list{
+                    grid-template-rows: repeat(3, 300px);
+                    .content_list-item {
+
+                        .list-item_img{
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        .list-item_description{
+
+                            .item_description-less{
+                                display: none;
+                            }
+                            .item_description-more{
+                                display: block;
+                            }
+                        }
+
+                    }
+                    .item{
+                        grid-column: 3/7;
+                        .item-img{
+                           background-image: url('../images/projects-item-1275.webp');
+                        }
+                    }
+                    .fuji{
+                        grid-column: 1/4;
+                        grid-row: 2/2;
+                    }
+                    .oblivion{
+                        grid-column: 4/7;
+                        grid-row: 3/3;
+                    }
+                    .retouch{
+                        grid-column: 4/7;
+                        grid-row: 2/3;
+                        max-width: 100%;
+                    }
+                    .portrait_big{
+                        grid-column: 1/4;
+                        grid-row: 3/3;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .contacts{
+            &-content{
+                &_adress{
+                    .content-adress_title,
+                    .content-adress_description,
+                    .content-adress_tel{
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        .container{
+            .footer-content{
+                .footer-text{
+
+                    margin-top: 0;
+
+                    
+                }
+            }
+        }
+    }
+    
+}

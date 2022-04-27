@@ -1,0 +1,127 @@
+@media (max-width: 1275px) {
+  .header .flex .nav .nav-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .flex .nav .nav-list_item {
+    margin-right: 40px;
+  }
+  .header .flex .social {
+    display: none;
+  }
+  .header .flex .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .flex .search_input {
+    margin-left: 5.5px;
+    display: block;
+    background: none;
+    border: none;
+    color: #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+  }
+  .header .flex .search_input::-webkit-input-placeholder {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E9E9E9;
+  }
+  .header .flex .search_input:-ms-input-placeholder {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E9E9E9;
+  }
+  .header .flex .search_input::-ms-input-placeholder {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E9E9E9;
+  }
+  .header .flex .search_input::placeholder {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E9E9E9;
+  }
+  .main .hero .hero-item_big {
+    background-position: center;
+  }
+  .main .about .description_right-img {
+    background-position: center;
+  }
+  .main .projects-content_list {
+    -ms-grid-rows: (300px)[3];
+        grid-template-rows: repeat(3, 300px);
+  }
+  .main .projects-content_list .content_list-item .list-item_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .projects-content_list .content_list-item .list-item_description .item_description-less {
+    display: none;
+  }
+  .main .projects-content_list .content_list-item .list-item_description .item_description-more {
+    display: block;
+  }
+  .main .projects-content_list .item {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-column: 3/7;
+  }
+  .main .projects-content_list .item .item-img {
+    background-image: url("../images/projects-item-1275.webp");
+  }
+  .main .projects-content_list .fuji {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  .main .projects-content_list .oblivion {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/7;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+  }
+  .main .projects-content_list .retouch {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/7;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    max-width: 100%;
+  }
+  .main .projects-content_list .portrait_big {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+    max-width: 100%;
+  }
+  .main .contacts-content_adress .content-adress_title,
+  .main .contacts-content_adress .content-adress_description,
+  .main .contacts-content_adress .content-adress_tel {
+    margin-left: 30px;
+  }
+  .footer .container .footer-content .footer-text {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=1275px.css.map */
